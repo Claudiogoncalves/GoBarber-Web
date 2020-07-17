@@ -57,7 +57,7 @@ const ResetPassword: React.FC = () => {
           token,
         });
 
-        history.push('/signin');
+        history.push('/');
       } catch (error) {
         if (error instanceof Yup.ValidationError) {
           const errors = getValidationErros(error);
